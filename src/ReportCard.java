@@ -2,7 +2,7 @@
  * Created by viachslav on 29.08.2018.
  */
 public class ReportCard {
-    public char convertGrades(int testResult){
+    public static char convertGrades(int testResult){
         char grade;
         if (testResult >=90){
             grade = 'A';
@@ -18,8 +18,8 @@ public class ReportCard {
     }
 
     public static void main(String[] args) {
-        ReportCard rc = new ReportCard();
-        char yourGrade = rc.convertGrades(88);
+
+        char yourGrade = convertGrades(88);
         switch (yourGrade){
             case 'A':
                 System.out.println("Превосходная работа!");
@@ -36,7 +36,7 @@ public class ReportCard {
 
         }
         System.out.println("Ваша первая оценка " + yourGrade);
-        yourGrade = rc.convertGrades(79);
+        yourGrade = convertGrades(79);
         System.out.println("Ваша вторая оценка " + yourGrade);
         }
     }
