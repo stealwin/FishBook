@@ -1,6 +1,7 @@
 /**
  * Created by viachslav on 29.08.2018.
  */
+
 public class TemperatureConverter {
     public void convertTemp(int temperature, char convertTo) {
 
